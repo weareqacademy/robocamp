@@ -5,6 +5,17 @@ Documentation        Suite de testes de matricula de alunos
 Resource        ../resources/base.resource
 
 *** Test Cases ***
+APi Test
+    [Tags]        api
+
+    ${admin}    Get Fixture        admin
+    ${falcao}  Get Fixture        falcao
+
+    Reset Student Enroll    ${falcao}[student][email]    
+
+    Set Token        ${admin}
+    POST Student     ${falcao}[student]
+
 Deve matricular um aluno
 
     ${admin}    Get Fixture        admin
