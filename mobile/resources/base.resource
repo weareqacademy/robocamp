@@ -2,6 +2,10 @@
 Documentation        Arquivo principal
 
 Library    AppiumLibrary
+Library    JSONLibrary
+
+*** Variables ***
+${API_URL}        http://192.168.68.116:3333
 
 *** Keywords ***
 Start App
@@ -19,3 +23,13 @@ Start App
 Finish App
     Capture Page Screenshot
     Close Application
+
+# Helpers
+Get Fixture
+    [Arguments]        ${fixture_file}
+
+    ${fixture}        Load JSON From File
+    ...               ${EXECDIR}/resources/fixtures/${fixture_file}.json
+    ...               encoding=UTF-8
+
+    [return]          ${fixture}
