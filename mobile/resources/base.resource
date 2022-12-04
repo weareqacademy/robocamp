@@ -8,6 +8,7 @@ Resource    screens/login.resource
 
 Resource    services/sessions.resource
 Resource    services/students.resource
+Resource    services/enrolls.resource
 
 Resource    database.resource
 
