@@ -6,6 +6,11 @@ Library     JSONLibrary
 
 Resource    screens/login.resource
 
+Resource    services/sessions.resource
+Resource    services/students.resource
+
+Resource    database.resource
+
 *** Keywords ***
 Start App
     Open Application	http://localhost:4723/wd/hub
