@@ -3,6 +3,7 @@ Documentation        Tudo começa aqui
 
 Resource        components/navbar.resource
 Resource        components/toast.resource
+Resource        components/notification.resource
 Resource        pages/login.resource
 Resource        pages/enroll.resource
 
