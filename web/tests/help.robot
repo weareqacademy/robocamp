@@ -3,6 +3,8 @@ Documentation            Suite de testes de recebimento de pedido de ajuda
 
 Resource        ../resources/base.resource
 
+Test Teardown        Take Screenshot
+
 *** Test Cases ***
 Deve receber uma notificação de pedido de ajuda
 
