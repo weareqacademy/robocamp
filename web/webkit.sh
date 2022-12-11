@@ -1,0 +1,1 @@
+robot -d ./logs -v BROWSER:webkit tests
